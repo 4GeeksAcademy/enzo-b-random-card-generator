@@ -1,5 +1,44 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
-
-body{
-    background: blue;
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: green;
+    font-family: Arial, sans-serif;
 }
+
+.card {
+    width: 300px;
+    height: 380px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    font-size: 2rem;
+}
+
+.top-suit {
+    font-size: 5rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.bottom-suit {
+    font-size: 5rem;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(180deg);
+}
+
+.card .suit {
+    font-size: 6rem;
+}
+
